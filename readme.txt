@@ -1,5 +1,1 @@
-run mongo db server first 
-
-now run the python driver code
-
-go to : http://localhost:7000/MyBankCardsManager
+Usually when a website is attacked by Brute-Force method, they block the account or use other approaches to avoid hackers. In my project, we have a Credit Cards Database. If an attacker uses brute-force method to hack into DBA's account, instead of blocking them, we provide them with a sacrificial database, i.e., Honeypot Database. This way, we get to reveal their true intentions. I'm not working on this project anymore, but I have considered few improvements to make in future.
