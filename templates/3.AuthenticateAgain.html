@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>DBA Authentication</title>
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/3.AuthenticateAgain/style.css') }}">
+
+</head>
+<style>
+	body {background-color: rgb(0, 0, 0);}
+</style>
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+	<div class="container">
+		<h1>Hey DBA, Wrong Credentrials, Try Again!</h1>
+		
+		<form class="form" action="/MyBankCardsManager/ProcessDBAdata" method ="get">
+			<input type="text" placeholder="DBA Code" name="DBACode">
+			<input type="password" placeholder="Password" name="Password">
+			<button type="submit" id="login-button">Authenticate</button>
+		</form>
+	</div>
+	
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+<!-- partial -->
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>DBA Authentication</title>
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/2.AuthenticateDBA/style.css') }}">
+</head>
+<style>
+	body {background-color: rgb(0, 0, 0);}
+</style>
+<body> 
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+	<div class="container">
+		<h1>Welcome DBA!</h1>
+		<form class="form" action="/MyBankCardsManager/ProcessDBAdata" method ="get">
+			<input type="text" placeholder="DBA Code" name="DBACode">
+			<input type="password" placeholder="Password" name="Password">
+			<button type="submit" id="login-button" onclick="/MyBankCardsManager/ProcessDBAdata">Authenticate</button>
+		</form>
+	</div>
+	
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+<body><button onclick="myFunction()">Reset</button></body>
+<script>
+	function myFunction() {
+	  location.replace("/MyBankCardsManager/Reset")
+	}
+</script>
+<!-- partial -->
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'scripts/2.AuthenticateDBA/script.js') }}"></script>
+</body>
+</html>
